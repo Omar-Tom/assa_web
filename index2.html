@@ -508,147 +508,119 @@
   </div>
 
   <div class="mb-3">
-      <label for="name">Name</label>
-      <input type="text" class="form-control" id="name" name="name" placeholder="Mr Wings" required>
-  </div>
-  <div class="mb-3">
-      <label for="phone">Phone Number</label>
-      <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone Number" required>
-  </div>
-  <div class="mb-3">
-      <label for="address">Delivery Address</label>
-      <textarea class="form-control" id="address" name="address" placeholder="Your Delivery Address (What3Words Encouraged)" rows="2" required></textarea>
-  </div>
+       <label for="name">Name</label>
+       <input type="text" class="form-control" id="name" name="name" placeholder="Mr Wings" required>
+   </div>
+   <div class="mb-3">
+       <label for="phone">Phone Number</label>
+       <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone Number" required>
+   </div>
+   <div class="mb-3">
+       <label for="address">Delivery Address</label>
+       <textarea class="form-control" id="address" name="address" placeholder="Your Delivery Address (What3Words Encouraged)" rows="2" required></textarea>
+   </div>
+
+   <section id="meal-side-selection" class="form-section">
+       <div class="container">
+           <h2 class="text-center mb-5">Customize Your Order</h2>
+
+           <div class="meal-side-container mb-4" id="meal-container">
+               <label for="meal1" class="form-label">Select Your Meal</label>
+               <select class="form-control" id="meal1" name="meal[]" required>
+                   <option value="" disabled selected>Select a meal</option>
+                   <option value="Barbecue Wings">Barbecue Wings</option>
+                   <option value="Lemon Pepper Wings">Lemon Pepper Wings</option>
+                   <option value="Crispy Wings">Crispy Wings</option>
+                   <option value="Peppered Wings">Peppered Wings</option>
+                   <option value="Honey Garlic Wings">Honey Garlic Wings</option>
+                   <option value="Saafy's Special Wings">Saafy's Special Wings</option>
+               </select>
+           </div>
+
+           <div class="meal-side-container mb-4" id="side-container">
+               <label for="side1" class="form-label">Select Your Side (Optional)</label>
+               <select class="form-control" id="side1" name="side[]" required>
+                   <option value="" disabled selected>Select a side</option>
+                   <option value="Potato Salad">Potato Salad</option>
+                   <option value="Lebanese Bread">Lebanese Bread</option>
+                   <option value="Fries">Fries</option>
+                   <option value="Sweet Potato Fries">Sweet Potato Fries</option>
+                   <option value="Yam Fries">Yam Fries</option>
+                   <option value="Chicken Wrap">Chicken Wrap</option>
+                   <option value="Onion Rings">Onion Rings</option>
+                   <option value="Smokey Jollof Rice">Smokey Jollof Rice</option>
+               </select>
+           </div>
+
+           <div class="mb-3">
+               <button type="button" class="btn btn-add" id="addMealButton">
+                   <i class="fas fa-plus-circle"></i> Add Another Meal 🪽
+               </button>
+           </div>
+
+           <div class="mb-3">
+               <button type="button" class="btn btn-add" id="addSideButton">
+                   <i class="fas fa-plus-circle"></i> Add Another Side
+               </button>
+           </div>
+
+           <div class="text-center">
+               <button type="submit" class="btn btn-submit btn-lg">
+                   Submit Order
+               </button>
+           </div>
+       </div>
+   </section>
 </form>
 
-<style>
-  .wingin_chicken_gif {
-      width: 150px;  /* Smaller size */
-      position: absolute;
-      top: -30px;  /* Adjust to avoid extra space */
-      left: 50%;
-      transform: translateX(-50%);
-      animation: flyAround 10s infinite;
-  }
-
-  @keyframes flyAround {
-      0% { transform: translate(0, 0) rotate(0deg); }
-      25% { transform: translate(30px, 20px) rotate(10deg); }
-      50% { transform: translate(0, 40px) rotate(0deg); }
-      75% { transform: translate(-30px, 20px) rotate(-10deg); }
-      100% { transform: translate(0, 0) rotate(0deg); }
-  }
-</style>
-
-<!-- Meal and Side Selections -->
-<section id="meal-side-selection" class="form-section">
-    <div class="container">
-        <h2 class="text-center mb-5">Customize Your Order</h2>
-        <form id="orderForm">
-
-            <!-- Meal Selection -->
-            <div class="meal-side-container mb-4" id="meal-container">
-                <label for="meal1" class="form-label">Select Your Meal</label>
-                <select class="form-control" id="meal1" name="meal[]" required>
-                    <option value="" disabled selected>Select a meal</option>
-                    <option value="Barbecue Wings">Barbecue Wings</option>
-                    <option value="Lemon Pepper Wings">Lemon Pepper Wings</option>
-                    <option value="Crispy Wings">Crispy Wings</option>
-                    <option value="Peppered Wings">Peppered Wings</option>
-                    <option value="Honey Garlic Wings">Honey Garlic Wings</option>
-                    <option value="Saafy's Special Wings">Saafy's Special Wings</option>
-                </select>
-            </div>
-
-            <!-- Side Selection -->
-            <div class="meal-side-container mb-4" id="side-container">
-                <label for="side1" class="form-label">Select Your Side (Optional)</label>
-                <select class="form-control" id="side1" name="side[]" required>
-                    <option value="" disabled selected>Select a side</option>
-                    <option value="Potato Salad">Potato Salad</option>
-                    <option value="Lebanese Bread">Lebanese Bread</option>
-                    <option value="Fries">Fries</option>
-                    <option value="Sweet Potato Fries">Sweet Potato Fries</option>
-                    <option value="Yam Fries">Yam Fries</option>
-                    <option value="Chicken Wrap">Chicken Wrap</option>
-                    <option value="Onion Rings">Onion Rings</option>
-                    <option value="Smokey Jollof Rice">Smokey Jollof Rice</option>
-                </select>
-            </div>
-
-            <!-- Button to Add Another Meal -->
-            <div class="mb-3">
-                <button type="button" class="btn btn-add" id="addMealButton">
-                    <i class="fas fa-plus-circle"></i> Add Another Meal 🪽
-                </button>
-            </div>
-
-            <!-- Button to Add Another Side -->
-            <div class="mb-3">
-                <button type="button" class="btn btn-add" id="addSideButton">
-                    <i class="fas fa-plus-circle"></i> Add Another Side
-                </button>
-            </div>
-
-            <!-- Submit Button -->
-            <div class="text-center">
-                <button type="submit" class="btn btn-submit btn-lg">
-                    Submit Order
-                </button>
-            </div>
-        </form>
-    </div>
-</section>
-<!-- JavaScript to Dynamically Add Meals and Sides -->
 <script>
-    let mealCount = 1;
-    let sideCount = 1;
+   let mealCount = 1;
+   let sideCount = 1;
 
-    // Add another meal
-    document.getElementById('addMealButton').addEventListener('click', function() {
-        mealCount++;
+   // Add another meal
+   document.getElementById('addMealButton').addEventListener('click', function() {
+       mealCount++;
 
-        // Create a new meal selection dropdown
-        const mealContainer = document.getElementById('meal-container');
-        const newMealDiv = document.createElement('div');
-        newMealDiv.classList.add('meal-side-container', 'mb-4');
-        newMealDiv.innerHTML = `
-            <label for="meal${mealCount}" class="form-label">Select Your Meal</label>
-            <select class="form-control" id="meal${mealCount}" name="meal[]" required>
-                <option value="" disabled selected>Select a meal</option>
-                <option value="Spicy BBQ Wings">Spicy BBQ Wings</option>
-                <option value="Garlic Parmesan Wings">Garlic Parmesan Wings</option>
-                <option value="Honey Glazed Wings">Honey Glazed Wings</option>
-                <option value="Buffalo Wings">Buffalo Wings</option>
-                <option value="Teriyaki Wings">Teriyaki Wings</option>
-            </select>
-        `;
+       const mealContainer = document.getElementById('meal-container');
+       const newMealDiv = document.createElement('div');
+       newMealDiv.classList.add('meal-side-container', 'mb-4');
+       newMealDiv.innerHTML = `
+           <label for="meal${mealCount}" class="form-label">Select Your Meal</label>
+           <select class="form-control" id="meal${mealCount}" name="meal[]" required>
+               <option value="" disabled selected>Select a meal</option>
+               <option value="Spicy BBQ Wings">Spicy BBQ Wings</option>
+               <option value="Garlic Parmesan Wings">Garlic Parmesan Wings</option>
+               <option value="Honey Glazed Wings">Honey Glazed Wings</option>
+               <option value="Buffalo Wings">Buffalo Wings</option>
+               <option value="Teriyaki Wings">Teriyaki Wings</option>
+           </select>
+       `;
 
-        mealContainer.appendChild(newMealDiv);
-    });
+       mealContainer.appendChild(newMealDiv);
+   });
 
-    // Add another side
-    document.getElementById('addSideButton').addEventListener('click', function() {
-        sideCount++;
+   // Add another side
+   document.getElementById('addSideButton').addEventListener('click', function() {
+       sideCount++;
 
-        // Create a new side selection dropdown
-        const sideContainer = document.getElementById('side-container');
-        const newSideDiv = document.createElement('div');
-        newSideDiv.classList.add('meal-side-container', 'mb-4');
-        newSideDiv.innerHTML = `
-            <label for="side${sideCount}" class="form-label">Select Your Side</label>
-            <select class="form-control" id="side${sideCount}" name="side[]" required>
-                <option value="" disabled selected>Select a side</option>
-                <option value="French Fries">French Fries</option>
-                <option value="Onion Rings">Onion Rings</option>
-                <option value="Coleslaw">Coleslaw</option>
-                <option value="Garlic Bread">Garlic Bread</option>
-            </select>
-        `;
+       const sideContainer = document.getElementById('side-container');
+       const newSideDiv = document.createElement('div');
+       newSideDiv.classList.add('meal-side-container', 'mb-4');
+       newSideDiv.innerHTML = `
+           <label for="side${sideCount}" class="form-label">Select Your Side</label>
+           <select class="form-control" id="side${sideCount}" name="side[]" required>
+               <option value="" disabled selected>Select a side</option>
+               <option value="French Fries">French Fries</option>
+               <option value="Onion Rings">Onion Rings</option>
+               <option value="Coleslaw">Coleslaw</option>
+               <option value="Garlic Bread">Garlic Bread</option>
+           </select>
+       `;
 
-        sideContainer.appendChild(newSideDiv);
-    });
+       sideContainer.appendChild(newSideDiv);
+   });
 </script>
+
 
 <!-- Custom Styles for Better Aesthetics -->
 <style>

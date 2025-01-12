@@ -35,6 +35,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (mail($to, $subject, $message, $headers)) {
         echo "Your order has been successfully placed!";
     } else {
+        // Log error if email sending fails
+        error_log("Email sending failed: " . error_get_last()['message']);
         echo "There was an error placing your order. Please try again later.";
     }
 }
