@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Basic Meta -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Menu - Chicken Wings</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+   <title>Menu - Wings</title>
+
+   <style>
+      /* General Styles */
+      body {
+         font-family: Arial, sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: #f9f9f9;
+      }
+
+      /* Navbar Styling */
+      .navbar {
+         padding: 1rem 2rem;
+         background-color: #fff;
+      }
+
+      .navbar-brand img {
+         height: 50px;
+         width: auto;
+      }
+
+      .navbar-nav .nav-link {
+         margin-right: 1rem;
+         color: #fff;
+      }
+
+      .navbar-nav .nav-link:hover {
+         text-decoration: underline;
+      }
+
+      .call_text {
+         font-size: 1rem;
+      }
+
+      /* Menu Section Styling */
+      .menu_section {
+         padding: 60px 0;
+         background-color: #f9f9f9;
+      }
+
+      .menu_title {
+         font-size: clamp(1.5rem, 2.5vw, 2rem);
+         font-weight: bold;
+         color: #333;
+         text-align: center;
+      }
+
+      .menu_description {
+         font-size: clamp(0.875rem, 2vw, 1rem);
+         color: #777;
+         text-align: center;
+         margin-top: 10px;
+         padding-bottom: 20px;
+      }
+
+      .price_info {
+         font-size: 1.25rem;
+         font-weight: 600;
+         color: #f39c12;
+         text-align: center;
+         margin-top: 30px;
+         margin-bottom: 40px;
+      }
+
+      .menu_item {
+         text-align: center;
+         background-color: #fff;
+         border-radius: 8px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         padding: 20px;
+         margin-bottom: 30px;
+         transition: transform 0.3s ease;
+      }
+
+      .menu_item:hover {
+         transform: translateY(-5px);
+      }
+
+      .menu_img {
+         max-width: 100%;
+         height: auto;
+         border-radius: 8px;
+      }
+
+      .menu_item_name {
+         font-size: 1.25rem;
+         font-weight: 600;
+         color: #333;
+         margin-top: 15px;
+      }
+
+      .menu_item_description {
+         color: #555;
+         margin-top: 10px;
+         font-size: 1rem;
+      }
+
+      /* Extras Section Styling */
+      .extras_section {
+         padding: 40px 0;
+         background-color: #fff;
+         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+         border-radius: 8px;
+         margin-top: 40px;
+      }
+
+      .extras_title {
+         font-size: 1.5rem;
+         font-weight: 600;
+         text-align: center;
+         color: #333;
+      }
+
+      .extras_list {
+         list-style: none;
+         padding: 0;
+         margin-top: 20px;
+         font-size: 1.1rem;
+         text-align: center;
+      }
+
+      .extras_list li {
+         color: #555;
+         margin: 10px 0;
+      }
+      .price_info {
+         font-size: 1.5rem;
+         font-weight: bold;
+         color: #FF5733; /* Bold color to make it stand out */
+         background: #fff3e0; /* Light background color for contrast */
+         padding: 10px;
+         border-radius: 15px;
+         display: inline-block;
+         position: relative;
+         font-family: 'Lobster', cursive; /* Apply the Pacifico font */
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+         margin-top: 20px;
+      }
+
+      .price_info::before {
+         content: '“'; /* Opening quote */
+         font-size: 2rem;
+         color: #FF5733;
+         position: absolute;
+         top: -15px;
+         left: -15px;
+      }
+
+      .price_info::after {
+         content: '”'; /* Closing quote */
+         font-size: 2rem;
+         color: #FF5733;
+         position: absolute;
+         bottom: -15px;
+         right: -15px;
+      }
+      /* Footer Section Styling */
+      .footer_section {
+         background-color: #222;
+         color: #fff;
+         padding: 10px 0;
+         text-align: center;
+      }
+
+      .footer_section p {
+         margin: 0;
+         font-size: 0.875rem;
+      }
+   </style>
+
+</head>
+
+<body>
+   <!-- Header Section -->
+   <header class="header_section">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <div class="container">
+            <a class="navbar-brand" href="index.html">
+               <img src="images/logo1_no_bg.png" alt="Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav me-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Order</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">Menu</a></li>
+                  <li class="nav-item"><a class="nav-link" href="blog.html">What's winging?</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+               </ul>
+               <div>
+                  <span class="call_text text-light">Wing Us: <a href="tel:08092078563" class="text-light">08092078563</a></span>
+               </div>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <!-- Menu Section -->
+
+   <section class="menu_section">
+     </p>
+     .
+     <div class="container">
+        <div class="row justify-content-center text-center">
+           <div class="col-md-10">
+              <h1 class="menu_title">Our Delicious Chicken Wings</h1>
+              <p class="menu_description">
+                 Welcome to our menu! Explore the tastiest, juiciest wings you’ve ever had!
+                 Choose from a variety of flavors and styles that will leave you coming back for more.
+              </p>
+
+              <!-- Price Info Section -->
+              <p class="price_info">Price: ₦4,700 (7 pcs) | ₦9,000 (14 pcs) | ₦13,500 (21 pcs)</p>
+           </div>
+        </div>
+     </div>
+
+         <div class="row">
+            <div class="col-md-4 col-sm-6">
+               <div class="menu_item">
+                  <img src="images/wings-1.jpg" alt="Barbecue Wings" class="menu_img">
+                  <h3 class="menu_item_name">Barbecue Wings</h3>
+                  <p class="menu_item_description">Smoky, sweet, and sticky BBQ sauce that perfectly coats crispy fried wings. A must-try for BBQ lovers!</p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div class="menu_item">
+                  <img src="images/wings-2.jpg" alt="Lemon Pepper Wings" class="menu_img">
+                  <h3 class="menu_item_name">Lemon Pepper Wings</h3>
+                  <p class="menu_item_description">Crisp wings coated in zesty lemon and aromatic pepper, creating a refreshing and tangy flavor.</p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div class="menu_item">
+                  <img src="images/wings-3.jpg" alt="Crispy Wings" class="menu_img">
+                  <h3 class="menu_item_name">Crispy Wings</h3>
+                  <p class="menu_item_description">Perfectly fried, golden crispy wings that deliver a satisfying crunch with every bite.</p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div class="menu_item">
+                  <img src="images/wings-4.jpg" alt="Peppered Wings" class="menu_img">
+                  <h3 class="menu_item_name">Peppered Wings</h3>
+                  <p class="menu_item_description">Spicy and flavorful wings, generously coated with hot pepper seasoning for a fiery kick.</p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div class="menu_item">
+                  <img src="images/wings-5.jpg" alt="Honey Garlic Wings" class="menu_img">
+                  <h3 class="menu_item_name">Honey Garlic Wings</h3>
+                  <p class="menu_item_description">A delightful combination of sweet honey and savory garlic, offering a mouthwatering twist.</p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div class="menu_item">
+                  <img src="images/wings-6.jpg" alt="Saafy's Special Wings" class="menu_img">
+                  <h3 class="menu_item_name">Saafy's Special Wings</h3>
+                  <p class="menu_item_description">A secret recipe that combines sweet, savory, and spicy flavors for an unforgettable experience.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Extras Section -->
+   <div class="extras_section">
+      <div class="container">
+         <h2 class="extras_title">Extras & Sides</h2>
+         <ul class="extras_list">
+            <li>Potato Salad</li>
+            <li>Lebanese Bread</li>
+            <li>Fries</li>
+            <li>Sweet Potato Fries</li>
+            <li>Yam Fries</li>
+            <li>Chicken Wrap</li>
+            <li>Onion Rings</li>
+            <li>Smokey Jollof Rice</li>
+         </ul>
+      </div>
+   </div>
+
+   <!-- Footer Section -->
+   <footer class="footer_section">
+      <p>&copy; 2025 Hot-Wings. All Wings Reserved.</p>
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

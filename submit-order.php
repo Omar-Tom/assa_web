@@ -1,50 +1,41 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Collect form data
+    $name = htmlspecialchars($_POST['name']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $address = htmlspecialchars($_POST['address']);
+    $meals = isset($_POST['meal']) ? implode(", ", $_POST['meal']) : '';
+    $sides = isset($_POST['side']) ? implode(", ", $_POST['side']) : '';
 
-// Include PHPMailer files
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/src/SMTP.php';
+    // Create the email content
+    $subject = "New Wing Order from " . $name;
+    $message = "
+    <html>
+    <head>
+        <title>New Wing Order</title>
+    </head>
+    <body>
+        <p><strong>Name:</strong> $name</p>
+        <p><strong>Phone:</strong> $phone</p>
+        <p><strong>Address:</strong> $address</p>
+        <p><strong>Meals Ordered:</strong> $meals</p>
+        <p><strong>Sides Ordered:</strong> $sides</p>
+    </body>
+    </html>
+    ";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $phone = $_POST['phone'];
-    $address = $_POST['address'];
-    $order_details = $_POST['order_details'];
+    // Set the headers for HTML email
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
 
-    // Create a new PHPMailer instance
-    $mail = new PHPMailer(true);
+    // Email recipient (change this to the desired email)
+    $to = "diptytom@gmail.com";
 
-    try {
-        // SMTP configuration
-        $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com'; // Replace with your SMTP server
-        $mail->SMTPAuth = true;
-        $mail->Username = 'your_email@gmail.com'; // Your email
-        $mail->Password = 'your_email_password'; // Your email password (use app password for Gmail)
-        $mail->SMTPSecure = 'tls';
-        $mail->Port = 587;
-
-        // Email details
-        $mail->setFrom('your_email@gmail.com', 'Wing Orders');
-        $mail->addAddress('your_email@gmail.com'); // Recipient email
-        $mail->Subject = "New Order from $name";
-        $mail->Body = "
-        New Order Received:
-
-        Name: $name
-        Phone: $phone
-        Address: $address
-        Order Details:
-        $order_details
-        ";
-
-        // Send email
-        $mail->send();
-        echo "Order submitted successfully!";
-    } catch (Exception $e) {
-        echo "Error: {$mail->ErrorInfo}";
+    // Send the email
+    if (mail($to, $subject, $message, $headers)) {
+        echo "Your order has been successfully placed!";
+    } else {
+        echo "There was an error placing your order. Please try again later.";
     }
 }
 ?>

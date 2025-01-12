@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+/* External Stylesheets */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meanmenu/2.0.1/meanmenu.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/2.3.4/assets/owl.carousel.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/swiper/6.8.4/swiper.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/jquery.fancybox/3.5.7/jquery.fancybox.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/nice-select/1.1.0/css/nice-select.min.css');
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    font-weight: normal;
+    overflow-x: hidden;
+}
+
+/* Links */
+a {
+    color: #222222;
+    text-decoration: none !important;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ffb607;
+    text-decoration: underline;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    color: #111111;
+    margin: 0;
+    font-weight: normal;
+}
+
+h1 { font-size: 24px; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5 { font-size: 14px; }
+h6 { font-size: 13px; }
+
+/* Paragraphs */
+p {
+    margin: 20px 0;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+/* Buttons */
+button:focus, .btn:focus {
+    outline: none;
+}
+
+.btn {
+    text-decoration: none !important;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Layout Helpers */
+.full { width: 100%; float: left; }
+.layout_padding { padding: 90px 0 0; }
+.padding_0 { padding: 0; }
+
+/* Header Section */
+.header_section {
+    background-color: #ffffff;
+    width: 100%;
+    float: left;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Navbar */
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffb607;
+}
+
+/* Banner Section */
+.banner_section {
+    width: 100%;
+    float: left;
+    background-image: url(../images/kitchen-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50vh; /* Adjusted height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.banner_section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner_section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.banner_section h1 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.banner_section p {
+    font-size: 1.115rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.banner_section a.btn {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    background-color: #ffb607;
+    color: white;
+    border-radius: 5px;
+}
+
+.banner_section a.btn:hover {
+    background-color: #444;
+}
+
+/* Buttons */
+.contact_bt a, .read_bt a {
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.contact_bt a:hover, .read_bt a:hover {
+    background-color: #000;
+}
+
+/* About Section */
+.about_section {
+    background-color: #ffffff;
+    padding-bottom: 90px;
+}
+
+.about_text {
+    font-size: 40px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.lorem_text {
+    font-size: 16px;
+    color: #000;
+    padding-top: 40px;
+}
+
+/* Furnitures Section */
+.furnitures_section {
+    padding-bottom: 90px;
+}
+
+.our_text {
+    font-size: 36px;
+    color: #121111;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.ipsum_text {
+    font-size: 16px;
+    color: #090808;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Who Section */
+.who_section {
+    background-image: url(../images/bg-1.png);
+    background-size: cover;
+    padding-bottom: 55px;
+}
+
+.who_taital, .designer_text {
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Contact Section */
+.contact_section {
+    background-image: url(../images/contact-bg.png);
+    background-size: cover;
+    padding-bottom: 90px;
+}
+
+.contact_text {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.email-bt, .message-bt {
+    width: 100%;
+    color: #989696;
+    font-size: 18px;
+    margin-top: 25px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.email-bt::placeholder, .message-bt::placeholder {
+    color: #989696;
+}
+
+.send_bt a {
+    font-size: 20px;
+    color: #989696;
+    border: 2px solid #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.send_bt a:hover {
+    color: #989696;
+    background-color: #ffffff;
+}
+
+/* Gallery Section */
+.gallery_section {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+    height: 500px; /* Set a fixed height for the gallery section */
+    overflow: hidden; /* Ensure any overflowing content is hidden */
+}
+
+.carousel-inner {
+    height: 100%; /* Make the carousel items fill the entire container */
+}
+
+.carousel-inner img {
+    height: 100%; /* Make sure the images take up the entire height of the container */
+    object-fit: cover; /* Ensure the images maintain their aspect ratio while covering the space */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner_section h1 {
+        font-size: 2rem;
+    }
+
+    .banner_section p {
+        font-size: 1rem;
+    }
+
+    .banner_section a.btn {
+        font-size: 1rem;
+    }
+
+    .contact_bt a, .read_bt a {
+        font-size: 16px;
+    }
+
+    .about_text {
+        font-size: 32px;
+    }
+
+    .about_section {
+        padding-bottom: 60px;
+    }
+
+    .furnitures_section {
+        padding-bottom: 60px;
+    }
+
+    .who_section {
+        padding-bottom: 45px;
+    }
+
+    .contact_section {
+        padding-bottom: 60px;
+    }
+}
