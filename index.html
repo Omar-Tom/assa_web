@@ -37,7 +37,7 @@
 
         /* Banner Section */
         .banner_section {
-            background-image: url('images/interior.png');
+            background-image: url('images/bg-wings.JPG');
             background-size: cover;
             background-position: center;
             height: 40vh; /* Adjusted height to make it smaller */
@@ -91,7 +91,7 @@
         .order_form button {
             font-size: 1.25rem;
             padding: 0.75rem;
-            background: #007bff;
+            background: #007b5ff;
             border: none;
         }
 
@@ -243,15 +243,15 @@
     background-blend-mode: multiply;
     color: #333;
 }
+
     </style>
 </head>
 <body>
   <header class="header_section">
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-          <div id="react-root"></div>
            <a class="navbar-brand" href="index.html">
-              <img src="images/logo1_no_bg.png" alt="Logo" class="logo">
+              <img src="images/logo-hw.jpg" alt="Logo" class="logo">
 
            </a>
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -276,7 +276,7 @@
   <!-- Banner Section -->
   <section class="banner_section text-center text-white">
       <div class="container">
-          <h1>Craving Wings?</h1>
+        <h1 class="ramadan-title">🌙 Ramadan Mubarak!!! 🌙</h1>
           <p>Order now and get your wings flying to you in no time!</p>
           <a href="#orderForm" class="btn btn-primary btn-lg mt-3">Place Your Order</a>
       </div>
@@ -285,8 +285,8 @@
 
   <style>
       .banner_section {
-          background-image: url('images/interior.png');
-          background-size: cover;
+          background-image: url('images/bg-wings.JPG');
+          background-size: contain;
           background-position: center;
           height: 40vh;
           display: flex;
@@ -304,6 +304,14 @@
           width: 100px;
           animation: flyAnimation 20s linear infinite; /* Continuous animation */
       }
+      .ramadan-title {
+          font-family: 'Arabic Typesetting', sans-serif;
+          font-size: 3rem;
+          font-weight: bold;
+          color: #FFD700; /* Gold text for the Ramadan vibe */
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Shadow for better visibility */
+      }
+
 
       .static_chicken {
           position: absolute;
@@ -342,54 +350,16 @@
       }
   </style>
 
-    <!-- How It Works Section -->
-  <section id="how-it-works" class="text-center py-5 stylish-bg">
-      <div class="container">
-          <h2 class="mb-5" style="color: #ffb607;">How It Works</h2>
-          <div class="row g-4">
-              <!-- Step 1 -->
-              <div class="col-lg-4 col-md-6">
-                  <div class="step">
-                      <div class="icon-circle mb-3">
-                          <i class="fas fa-bacon fa-3x"></i> <!-- Bacon icon -->
-                      </div>
-                      <h4><a href="about.html" class="text-dark text-decoration-none">Choose Your Wings</a></h4>
-                      <p>Select from our wide variety of delicious wings to suit your taste.</p>
-                      <img src="https://media.giphy.com/media/U3s7Oncoxp52LuHbUP/giphy.gif" alt="Flying Chicken" class="static_chicken">
-                  </div>
-              </div>
-              <!-- Step 2 -->
-              <div class="col-lg-4 col-md-6">
-                  <div class="step">
-                      <div class="icon-circle mb-3">
-                          <i class="fas fa-pencil-alt fa-3x"></i> <!-- Pencil icon -->
-                      </div>
-                      <h4><a href="#orderForm" class="text-dark text-decoration-none">Place Your Order</a></h4>
-                      <p>Fill out our simple order form and let us handle the rest.</p>
-                  </div>
-              </div>
-              <!-- Step 3 -->
-              <div class="col-lg-4 col-md-6">
-                  <div class="step" style="cursor: pointer;" onclick="window.open('https://what3words.com', '_blank')">
-                      <div class="icon-circle mb-3">
-                          <i class="fas fa-truck fa-3x"></i> <!-- Delivery Truck icon -->
-                      </div>
-                      <h4>Enjoy Your Delivery</h4>
-                      <p>Receive your wings hot and fresh, right at your doorstep with the help of What3Words.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
+
 
   <!-- Gallery Section -->
   <section id="gallery" class="gallery_section">
     <div class="container">
-        <h2 class="text-center mb-5">Your Delicious Wings</h2>
+      <h2 class="text-center mb-5" style="font-size: 24px; margin-bottom: 20px;">Your Delicious Wings</h2>
         <div class="gallery-wrapper">
             <!-- First Image -->
             <div class="gallery-item">
-                <img src="images/wings-image.png" class="img-fluid" alt="Spicy Wings">
+                <img src="images/img-wings-3.JPG" class="img-fluid" alt="Spicy Wings">
                 <div class="overlay">
                     <h5>Spicy BBQ Wings</h5>
                     <p>Get a taste of fiery goodness.</p>
@@ -397,7 +367,7 @@
             </div>
             <!-- Second Image -->
             <div class="gallery-item">
-                <img src="images/wings-2.jpg" class="img-fluid" alt="Garlic Parmesan Wings">
+                <img src="https://media.giphy.com/media/06VibzRODAYmYs8eEF/giphy.gif?cid=790b7611tnuiobiud1q87gv99tkdg2xziqecvvyi4fi2nozf&ep=v1_gifs_search&rid=giphy.gif&ct=g" class="img-fluid" alt="Garlic Parmesan Wings">
                 <div class="overlay">
                     <h5>Garlic Parmesan Wings</h5>
                     <p>A classic with a twist.</p>
@@ -405,7 +375,7 @@
             </div>
             <!-- Third Image -->
             <div class="gallery-item">
-                <img src="images/logo1_no_bg.png" class="img-fluid" alt="Honey Glazed Wings">
+                <img src="images/bg-wings.JPG" class="img-fluid" alt="Honey Glazed Wings">
                 <div class="overlay">
                     <h5>Honey Glazed Wings</h5>
                     <p>Sweet and savory perfection.</p>
@@ -413,28 +383,28 @@
             </div>
             <!-- Additional Example Images -->
             <div class="gallery-item">
-                <img src="images/image-6.jpg" class="img-fluid" alt="Example Image 1">
+                <img src="images/image-6.jpg" class="img-fluid" alt="A bunch of guys eating Wings">
                 <div class="overlay">
-                    <h5>Example 1</h5>
+                    <h5>A bunch of guys eating Wings</h5>
+                    <p>A bunch of guys eating my Wings</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/image-7.jpg" class="img-fluid" alt="Cool AI generated guy eating our Wings">
+                <div class="overlay">
+                    <h5>Cool AI generated guy eating my Wings</h5>
                     <p>Delicious Wing Flavor</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="https://via.placeholder.com/400x400?text=Example+2" class="img-fluid" alt="Example Image 2">
+                <img src="images/image-8.jpg" class="img-fluid" alt="Cool AI generated guys eating our wings">
                 <div class="overlay">
-                    <h5>Example 2</h5>
+                    <h5>Cool AI generated guys eating my Wings</h5>
                     <p>Delicious Wing Flavor</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="https://via.placeholder.com/400x400?text=Example+3" class="img-fluid" alt="Example Image 3">
-                <div class="overlay">
-                    <h5>Example 3</h5>
-                    <p>Delicious Wing Flavor</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://via.placeholder.com/400x400?text=Example+4" class="img-fluid" alt="Example Image 4">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWUyOTR3bjN2anR6ZXo2cXU5YW5ieWthbmZ2cGU4cnVhcWZidnZsaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/mIfZ5IO5pP0GeSTnFF/giphy.gif" class="img-fluid" alt="Example Image 4">
                 <div class="overlay">
                     <h5>Example 4</h5>
                     <p>Delicious Wing Flavor</p>
@@ -506,152 +476,466 @@
         opacity: 1;
     }
   </style>
-<form id="orderForm" action="submit-order.php" method="POST" class="order_form">
-  <div class="mb-4" style="position: relative;">
-      <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXY2cW5zdnF0cm91c2Z6bmFnM2t2bzVzOTVpMHZ2eThueW1ndG1yYyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/cUoRsVJVMcsuc/giphy.gif" alt="Wingin' It Animated Chicken" class="wingin_chicken_gif">
-  </div>
+  <style>
+    /* Wing-themed Popup Styles */
+    #popupSuccess {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        z-index: 1000;
+        width: 90%;
+        max-width: 400px;
+    }
 
-  <div class="mb-3">
-      <label for="name">Name</label>
-      <input type="text" class="form-control" id="name" name="name" placeholder="Mr Wings" required>
-  </div>
-  <div class="mb-3">
-      <label for="phone">Phone Number</label>
-      <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone Number" required>
-  </div>
-  <div class="mb-3">
-      <label for="address">Delivery Address</label>
-      <textarea class="form-control" id="address" name="address" placeholder="Your Delivery Address (What3Words Encouraged)" rows="2" required></textarea>
-  </div>
-</form>
+    #popupSuccess h2 {
+        color: #ff4500;
+        margin-bottom: 10px;
+    }
 
-<style>
-  .wingin_chicken_gif {
-      width: 150px;  /* Smaller size */
-      position: absolute;
-      top: -30px;  /* Adjust to avoid extra space */
-      left: 50%;
-      transform: translateX(-50%);
-      animation: flyAround 10s infinite;
-  }
+    #popupSuccess p {
+        color: #333;
+        font-size: 16px;
+    }
 
-  @keyframes flyAround {
-      0% { transform: translate(0, 0) rotate(0deg); }
-      25% { transform: translate(30px, 20px) rotate(10deg); }
-      50% { transform: translate(0, 40px) rotate(0deg); }
-      75% { transform: translate(-30px, 20px) rotate(-10deg); }
-      100% { transform: translate(0, 0) rotate(0deg); }
-  }
+    #popupSuccess img {
+        width: 80px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    #popupSuccess button {
+        background-color: #ff4500;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    #popupSuccess button:hover {
+        background-color: #e63900;
+    }
+
+    /* Dim Background Overlay */
+    #popupOverlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 999;
+    }
 </style>
 
-<!-- Meal and Side Selections -->
-<section id="meal-side-selection" class="form-section">
-    <div class="container">
-        <h2 class="text-center mb-5">Customize Your Order</h2>
-        <form id="orderForm">
-
-            <!-- Meal Selection -->
-            <div class="meal-side-container mb-4" id="meal-container">
-                <label for="meal1" class="form-label">Select Your Meal</label>
-                <select class="form-control" id="meal1" name="meal[]" required>
-                    <option value="" disabled selected>Select a meal</option>
-                    <option value="Barbecue Wings">Barbecue Wings</option>
-                    <option value="Lemon Pepper Wings">Lemon Pepper Wings</option>
-                    <option value="Crispy Wings">Crispy Wings</option>
-                    <option value="Peppered Wings">Peppered Wings</option>
-                    <option value="Honey Garlic Wings">Honey Garlic Wings</option>
-                    <option value="Saafy's Special Wings">Saafy's Special Wings</option>
-                </select>
-            </div>
-
-            <!-- Side Selection -->
-            <div class="meal-side-container mb-4" id="side-container">
-                <label for="side1" class="form-label">Select Your Side (Optional)</label>
-                <select class="form-control" id="side1" name="side[]" required>
-                    <option value="" disabled selected>Select a side</option>
-                    <option value="Potato Salad">Potato Salad</option>
-                    <option value="Lebanese Bread">Lebanese Bread</option>
-                    <option value="Fries">Fries</option>
-                    <option value="Sweet Potato Fries">Sweet Potato Fries</option>
-                    <option value="Yam Fries">Yam Fries</option>
-                    <option value="Chicken Wrap">Chicken Wrap</option>
-                    <option value="Onion Rings">Onion Rings</option>
-                    <option value="Smokey Jollof Rice">Smokey Jollof Rice</option>
-                </select>
-            </div>
-
-            <!-- Button to Add Another Meal -->
-            <div class="mb-3">
-                <button type="button" class="btn btn-add" id="addMealButton">
-                    <i class="fas fa-plus-circle"></i> Add Another Meal 🪽
-                </button>
-            </div>
-
-            <!-- Button to Add Another Side -->
-            <div class="mb-3">
-                <button type="button" class="btn btn-add" id="addSideButton">
-                    <i class="fas fa-plus-circle"></i> Add Another Side 🍟
-                </button>
-            </div>
-
-            <!-- Submit Button -->
-            <div class="text-center">
-                <button type="submit" class="btn btn-submit btn-lg">
-                    Submit Order
-                </button>
-            </div>
-        </form>
+<form id="orderForm" action="https://formspree.io/f/mbllvykn" method="POST" class="order_form">
+    <div class="mb-4" style="position: relative;">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXY2cW5zdnF0cm91c2Z6bmFnM2t2bzVzOTVpMHZ2eThueW1ndG1yYyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/cUoRsVJVMcsuc/giphy.gif" alt="Wingin' It Animated Chicken" class="wingin_chicken_gif">
+        <img src="images/go_tell_your_friends_about_it.jpeg"
+         alt="Go Tell Your Friends About It"
+         style="width: 250px; height: 250;">
     </div>
-</section>
-<!-- JavaScript to Dynamically Add Meals and Sides -->
-<script>
-    let mealCount = 1;
-    let sideCount = 1;
 
-    // Add another meal
+    <div class="mb-3">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Mr Wings" required
+             oninput="this.classList.toggle('filled', this.value.trim() !== '')">
+    </div>
+    <div class="mb-3">
+      <label for="phone">Phone Number</label>
+      <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone Number"
+             pattern="^\d{11}$" title="Please enter exactly 11 digits" required
+             oninput="this.classList.toggle('filled', this.value.trim().length === 11 && this.value.match(/^\d+$/))">
+    </div>
+    <div class="mb-3">
+      <label for="address">Delivery Address</label>
+      <textarea class="form-control" id="address" name="address"
+                placeholder="Your Delivery Address (What3Words Encouraged)" rows="2" required
+                oninput="this.classList.toggle('filled', this.value.trim() !== '')"></textarea>
+    </div>
+    <style>
+        .form-control::placeholder {
+            color: #6c757d; /* Default placeholder color */
+        }
+        .form-control.filled {
+            color: green; /* Change to green when input is filled */
+        }
+        .form-control:invalid {
+            border-color: red; /* Show red border if invalid */
+        }
+        .form-control:valid {a
+            border-color: green; /* Show green border if valid */
+        }
+    </style>
+    <div id="meal-container" class="meal-side-container mb-4">
+        <label for="meal1" class="form-label">Select Your Meal</label>
+        <select class="form-control meal-select" id="meal1" name="meal[]" required>
+            <option value="" disabled selected>Select a meal</option>
+            <option value="Barbecue Wings">Barbecue Wings</option>
+            <option value="Lemon Pepper Wings">Lemon Pepper Wings</option>
+            <option value="Crispy Wings">Crispy Wings</option>
+            <option value="Peppered Wings">Peppered Wings</option>
+            <option value="Honey Garlic Wings">Honey Garlic Wings</option>
+            <option value="Saafy's Special Wings">Saafy's Special Wings</option>
+          </select>
+          <label for="mealQuantity1" class="form-label">Quantity</label>
+          <select class="form-control meal-quantity" id="mealQuantity1" name="mealQuantity[]" required>
+              <option value="7" data-price="4700">7 Pieces - ₦4,700</option>
+              <option value="14" data-price="9000">14 Pieces - ₦9,000</option>
+              <option value="21" data-price="13500">21 Pieces - ₦13,500</option>
+          </select>
+
+            <p class="discount_note" style="color: #ff5722; font-weight: bold; margin-top: 5px;">
+            </p>
+    </div>
+
+    <div id="side-container" class="meal-side-container mb-4">
+        <label for="side1" class="form-label">Select Your Side (Optional)</label>
+        <select class="form-control side-select" id="side1" name="side[]" >
+            <option value="" disabled selected>Select a side</option>
+            <option value="Potato Salad" data-price="2000">Potato Salad - ₦2,000</option>
+            <option value="Lebanese Bread" data-price="1000">Lebanese Bread - ₦1,000</option>
+            <option value="Fries" data-price="2000">Fries - ₦2,000</option>
+            <option value="Sweet Potato Fries" data-price="1500">Sweet Potato Fries - ₦1,500</option>
+            <option value="Yam Fries" data-price="2000">Yam Fries - ₦2,000</option>
+            <option value="Chicken Wrap" data-price="3500">Chicken Wrap - ₦3,500</option>
+            <option value="Onion Rings" data-price="1500">Onion Rings - ₦1,500</option>
+            <option value="Smokey Jollof Rice" data-price="2500">Smokey Jollof Rice - ₦2,500</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <button type="button" class="btn btn-add" id="addMealButton">Add Another Meal 🪽</button>
+    </div>
+    <div class="mb-3">
+        <button type="button" class="btn btn-add" id="addSideButton">Add Another Side 🍟</button>
+    </div>
+
+    <div class="order-summary mb-4">
+        <h3>Order Summary</h3>
+        <ul id="summaryList"></ul>
+        <h4 id="totalPrice">Total: ₦0</h4>
+        <p>Delivery from Kado</p>
+    </div>
+
+    <div class="text-center">
+        <button type="button" class="btn btn-submit btn-lg" id="submitDemo">Submit Order</button>
+    </div>
+</form>
+
+<div id="popupOverlay"></div>
+<div id="popupSuccess">
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2VlczgzazByOXozcTFzdHR2NHAyZ2o4ZWpmcHgzNnNtYmF0Z3QwYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0HlGVD6AsbobSTe0/giphy.gif"
+         alt="Flying Wings">
+    <h2>Order Successful!</h2>
+    <p>Your order has been placed successfully. We'll get your wings flying to you soon! 🍗</p>
+    <button id="closePopup">Close</button>
+</div>
+
+
+<title>Ramadan Decorations</title>
+<style>
+    /* Falling Elements */
+    #falling-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 9999; /* Ensure falling elements are above background */
+    }
+
+    .falling-item {
+        position: absolute;
+        top: -50px;
+        font-size: 24px;
+        color: gold;
+        animation: fall linear infinite;
+        z-index: 9999; /* Ensure falling items are visible above other content */
+    }
+
+    /* Falling Animation */
+    @keyframes fall {
+        0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+        100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+    }
+
+    /* Background Glow */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, rgba(255,215,0,0.1) 10%, rgba(0,0,0,0.9) 90%);
+        z-index: -1; /* Ensure this is in the background */
+    }
+
+    /* Swinging Crescent & Lantern */
+    .swinging-lantern, .swinging-moon {
+        position: absolute; /* Changed from fixed to absolute */
+        top: 100px; /* Ensure it's at the top */
+        font-size: 50px;
+        animation: swing 3s ease-in-out infinite alternate;
+        z-index: 9999; /* Ensure swinging items are above everything else */
+    }
+
+    .swinging-lantern { left: 60%; }
+    .swinging-moon { right: 60%; }
+
+    @keyframes swing {
+        from { transform: rotate(-5deg) translateY(5px); }
+        to { transform: rotate(5deg) translateY(-5px); }
+    }
+
+    /* Twinkling Stars */
+    .star {
+        position: fixed;
+        font-size: 8px;
+        color: gold;
+        opacity: 0.3;
+        animation: twinkle-stars 2s infinite alternate;
+        z-index: 9999; /* Ensure stars are above everything else */
+    }
+
+    /* Random star positioning */
+    .star:nth-child(1) { top: 10%; left: 15%; animation-delay: 0.5s; }
+    .star:nth-child(2) { top: 30%; left: 60%; animation-delay: 1s; }
+    .star:nth-child(3) { top: 50%; left: 40%; animation-delay: 1.5s; }
+    .star:nth-child(4) { top: 70%; left: 20%; animation-delay: 2s; }
+    .star:nth-child(5) { top: 90%; left: 80%; animation-delay: 2.5s; }
+
+    /* Audio Button */
+    .audio-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #ff5722;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        z-index: 9999; /* Ensure audio button is visible */
+    }
+</style>
+</head>
+<body>
+<!-- Falling Elements Container -->
+<div id="falling-container"></div>
+
+<!-- Optional Background Audio -->
+<audio id="ramadan-audio" loop>
+    <source src="audio/nasheed-ramadan.mp3" type="audio/mpeg">
+</audio>
+<button onclick="toggleAudio()" class="audio-btn">🔊</button>
+
+<!-- JavaScript to Handle Falling Effect -->
+<script>
+    window.onload = function() {
+        startFallingEffect();
+    };
+
+    function startFallingEffect() {
+        const container = document.getElementById('falling-container');
+        const symbols = ["🌙", "⭐", "✨", "🌟", "🕌", "🎇"];
+        let fallingInterval = setInterval(() => {
+            const element = document.createElement('div');
+            element.classList.add('falling-item');
+            element.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
+
+            // Randomize position, size, and animation duration
+            element.style.left = Math.random() * 100 + "vw";
+            element.style.animationDuration = (Math.random() * 3 + 2) + "s";
+            element.style.fontSize = (Math.random() * 10 + 20) + "px";
+
+            container.appendChild(element);
+
+            // Remove elements after animation
+            setTimeout(() => { element.remove(); }, 5000);
+        }, 500); // New element every 0.5s
+
+        // Stop falling effect after 5 seconds
+        setTimeout(() => {
+            clearInterval(fallingInterval);
+        }, 5000);
+    }
+
+    // Toggle Audio
+    function toggleAudio() {
+        const audio = document.getElementById("ramadan-audio");
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+</script>
+
+<!-- Optional Swinging Crescent & Lantern -->
+<div class="swinging-lantern">🏮</div>
+<div class="swinging-moon">🌙</div>
+</body>
+</html>
+<script>
+    function updateOrderSummary() {
+        const mealQuantities = document.querySelectorAll('.meal-quantity');
+        const sideSelects = document.querySelectorAll('.side-select');
+        const summaryList = document.getElementById('summaryList');
+        const totalPriceEl = document.getElementById('totalPrice');
+
+        let total = 0;
+        summaryList.innerHTML = ''; // Clear the summary
+
+        // Calculate meals
+        mealQuantities.forEach((quantity, index) => {
+            const selectedMeal = quantity.closest('.meal-side-container').querySelector('.meal-select');
+            const mealText = selectedMeal.options[selectedMeal.selectedIndex]?.text || 'Meal';
+            const price = parseInt(quantity.options[quantity.selectedIndex]?.dataset?.price || 0, 10);
+            total += price;
+            if (mealText) {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${mealText} - ${quantity.options[quantity.selectedIndex].text}`;
+                summaryList.appendChild(listItem);
+            }
+        });
+
+        // Calculate sides
+        sideSelects.forEach(side => {
+            const sideText = side.options[side.selectedIndex]?.text || 'Side';
+            const price = parseInt(side.options[side.selectedIndex]?.dataset?.price || 0, 10);
+            total += price;
+            if (sideText) {
+                const listItem = document.createElement('li');
+                listItem.textContent = sideText;
+                summaryList.appendChild(listItem);
+            }
+        });
+
+        totalPriceEl.textContent = `Total: ₦${total.toLocaleString()}`;
+    }
+
+    document.getElementById('submitDemo').addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default form submission
+
+        const form = document.getElementById('orderForm');
+
+        if (form.checkValidity()) {
+            const formData = new FormData(form);
+
+            // Disable the button to prevent duplicate submissions
+            const submitButton = document.getElementById('submitDemo');
+            submitButton.disabled = true;
+            submitButton.textContent = "Submitting...";
+
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+            })
+                .then(() => {
+                    // Assume success after submission completes
+                    showSuccessPopup();
+                })
+                .catch(() => {
+                    // Even if there's an error, show the success message
+                    showSuccessPopup();
+                })
+                .finally(() => {
+                    // Re-enable the button regardless of success or failure
+                    submitButton.disabled = false;
+                    submitButton.textContent = "Submit Order";
+                });
+        } else {
+            form.reportValidity(); // Show validation errors if the form is invalid
+        }
+    });
+
+    // Success Popup Logic
+    function showSuccessPopup() {
+        document.getElementById('popupOverlay').style.display = 'block';
+        document.getElementById('popupSuccess').style.display = 'block';
+        const form = document.getElementById('orderForm');
+        form.reset(); // Reset the form
+        updateOrderSummary(); // Update the order summary
+    }
+
+    // Close the success popup
+    document.getElementById('closePopup').addEventListener('click', function () {
+        document.getElementById('popupOverlay').style.display = 'none';
+        document.getElementById('popupSuccess').style.display = 'none';
+    });
+    let mealCount = 1;
     document.getElementById('addMealButton').addEventListener('click', function() {
         mealCount++;
-
-        // Create a new meal selection dropdown
         const mealContainer = document.getElementById('meal-container');
         const newMealDiv = document.createElement('div');
         newMealDiv.classList.add('meal-side-container', 'mb-4');
         newMealDiv.innerHTML = `
             <label for="meal${mealCount}" class="form-label">Select Your Meal</label>
-            <select class="form-control" id="meal${mealCount}" name="meal[]" required>
+            <select class="form-control meal-select" id="meal${mealCount}" name="meal[]" required>
                 <option value="" disabled selected>Select a meal</option>
-                <option value="Spicy BBQ Wings">Spicy BBQ Wings</option>
-                <option value="Garlic Parmesan Wings">Garlic Parmesan Wings</option>
-                <option value="Honey Glazed Wings">Honey Glazed Wings</option>
-                <option value="Buffalo Wings">Buffalo Wings</option>
-                <option value="Teriyaki Wings">Teriyaki Wings</option>
+                <option value="Barbecue Wings">Barbecue Wings</option>
+                <option value="Lemon Pepper Wings">Lemon Pepper Wings</option>
+                <option value="Crispy Wings">Crispy Wings</option>
+                <option value="Peppered Wings">Peppered Wings</option>
+                <option value="Honey Garlic Wings">Honey Garlic Wings</option>
+                <option value="Saafy's Special Wings">Saafy's Special Wings</option>
+            </select>
+            <label for="mealQuantity${mealCount}" class="form-label">Quantity</label>
+            <select class="form-control meal-quantity" id="mealQuantity${mealCount}" name="mealQuantity[]" required>
+                <option value="7" data-price="4700">7 Pieces - ₦4,700</option>
+                <option value="14" data-price="9000">14 Pieces - ₦9,000</option>
+                <option value="21" data-price="13500">21 Pieces - ₦13,500</option>
             </select>
         `;
-
         mealContainer.appendChild(newMealDiv);
+        updateOrderSummary();
     });
 
-    // Add another side
+    let sideCount = 1;
     document.getElementById('addSideButton').addEventListener('click', function() {
         sideCount++;
-
-        // Create a new side selection dropdown
         const sideContainer = document.getElementById('side-container');
         const newSideDiv = document.createElement('div');
         newSideDiv.classList.add('meal-side-container', 'mb-4');
         newSideDiv.innerHTML = `
-            <label for="side${sideCount}" class="form-label">Select Your Side</label>
-            <select class="form-control" id="side${sideCount}" name="side[]" required>
+            <label for="side${sideCount}" class="form-label">Select Your Side (Optional)</label>
+            <select class="form-control side-select" id="side${sideCount}" name="side[]">
                 <option value="" disabled selected>Select a side</option>
-                <option value="French Fries">French Fries</option>
-                <option value="Onion Rings">Onion Rings</option>
-                <option value="Coleslaw">Coleslaw</option>
-                <option value="Garlic Bread">Garlic Bread</option>
+                <option value="Potato Salad" data-price="2000">Potato Salad - ₦2,000</option>
+                <option value="Lebanese Bread" data-price="1000">Lebanese Bread - ₦1,000</option>
+                <option value="Fries" data-price="2000">Fries - ₦2,000</option>
+                <option value="Sweet Potato Fries" data-price="1500">Sweet Potato Fries - ₦1,500</option>
+                <option value="Yam Fries" data-price="2000">Yam Fries - ₦2,000</option>
+                <option value="Chicken Wrap" data-price="3500">Chicken Wrap - ₦3,500</option>
+                <option value="Onion Rings" data-price="1500">Onion Rings - ₦1,500</option>
+                <option value="Smokey Jollof Rice" data-price="2500">Smokey Jollof Rice - ₦2,500</option>
             </select>
         `;
-
         sideContainer.appendChild(newSideDiv);
+        updateOrderSummary();
     });
+
+    // Add event listeners to dynamically update the prices when meals or sides are selected
+    document.querySelectorAll('.meal-select, .meal-quantity, .side-select').forEach(select => {
+        select.addEventListener('change', updateOrderSummary);
+    });
+
+    // Initial call to update the order summary when the page loads
+    updateOrderSummary();
+
 </script>
 
 <!-- Custom Styles for Better Aesthetics -->
@@ -740,64 +1024,63 @@
         }
     }
 </style>
-  <!-- Footer Section -->
-  <section class="footer_section" style="background-color: #333; color: white; padding: 40px 0;">
-    <div class="container">
-        <div class="row">
-            <!-- About Us -->
-            <div class="col-md-3 mb-4">
-                <h5>About Us</h5>
-                <p>We are passionate about delivering hot, delicious wings to your door. Our wide variety of wings will surely satisfy your cravings.</p>
-            </div>
+<!-- Footer Section -->
+<section class="footer_section" style="background-color: #f1f1f1; color: #333; padding: 5px 0;">
+  <div class="container">
+      <div class="row">
+          <!-- About Us -->
+          <div class="col-md-3 mb-4">
+              <h5 style="font-weight: bold; color: #ff9f00;">About Us</h5>
+              <p>We are passionate about delivering hot, delicious wings straight to your door. Whether you're craving savory barbecue or spicy lemon pepper, we’ve got you covered!</p>
+          </div>
 
-            <!-- Quick Links -->
-            <div class="col-md-3 mb-4">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-                    <li><a href="menu.html" class="text-white text-decoration-none">Menu</a></li>
-                    <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
-                    <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
-                    <li><a href="blog.html" class="text-white text-decoration-none">What's Winging?</a></li>
-                </ul>
-            </div>
+          <!-- Quick Links -->
+          <div class="col-md-3 mb-4">
+              <h5 style="font-weight: bold; color: #ff9f00;">Quick Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
+                  <li><a href="about.html" class="text-dark text-decoration-none">Menu</a></li>
+                  <li><a href="contact.html" class="text-dark text-decoration-none">Contact</a></li>
+                  <li><a href="blog.html" class="text-dark text-decoration-none">What's Winging?</a></li>
+              </ul>
+          </div>
 
-            <!-- Contact Us -->
-            <div class="col-md-3 mb-4">
-                <h5>Contact Us</h5>
-                <ul class="list-unstyled">
-                    <li><span class="fas fa-phone-alt"></span> <a href="tel:08092078563" class="text-white text-decoration-none">08092078563</a></li>
-                    <li><span class="fas fa-envelope"></span> <a href="mailto:info@example.com" class="text-white text-decoration-none">info@example.com</a></li>
-                    <li><span class="fas fa-map-marker-alt"></span> Wing Street, Abuja</li>
-                </ul>
-            </div>
+          <!-- Contact Us -->
+          <div class="col-md-3 mb-4">
+              <h5 style="font-weight: bold; color: #ff9f00;">Contact Us</h5>
+              <ul class="list-unstyled">
+                  <li><span class="fas fa-phone-alt" style="color: #ff9f00;"></span> <a href="tel:08092078563" class="text-dark text-decoration-none">08092078563</a></li>
+                  <li><span class="fas fa-envelope" style="color: #ff9f00;"></span> <a href="mailto:enquiries@hot-wings.com" class="text-dark text-decoration-none">info@hot-wings.com</a></li>
+                  <li><span class="fas fa-map-marker-alt" style="color: #ff9f00;"></span> Wing Street, Abuja</li>
+              </ul>
+          </div>
 
-            <!-- Social Media -->
-            <div class="col-md-3 mb-4">
-                <h5>Follow Us</h5>
-                <div class="social">
-                    <a href="https://www.facebook.com" target="_blank" class="text-white">
-                        <img src="images/fb-icon.png" alt="Facebook">
-                    </a>
-                    <a href="https://twitter.com" target="_blank" class="text-white">
-                        <img src="images/twitter-icon.png" alt="Twitter">
-                    </a>
-                    <a href="https://www.instagram.com/wingit__ng" target="_blank" class="text-white">
-                        <img src="images/instagram-icon.png" alt="Instagram">
-                    </a>
-                    <a href="https://www.snapchat.com/safiyaaa_t" target="_blank" class="text-white">
-                        <img src="images/sc-icon.jpg" alt="Snapchat">
-                    </a>
-                </div>
-            </div>
-        </div>
+          <!-- Social Media -->
+          <div class="col-md-3 mb-4">
+              <h5 style="font-weight: bold; color: #ff9f00;">Follow Us</h5>
+              <div class="social">
+                  <a href="https://www.facebook.com" target="_blank" class="text-dark">
+                      <img src="images/fb-icon.png" alt="Facebook" style="width: 30px; margin-right: 15px;">
+                  </a>
+                  <a href="https://twitter.com" target="_blank" class="text-dark">
+                      <img src="images/twitter-icon.png" alt="Twitter" style="width: 30px; margin-right: 15px;">
+                  </a>
+                  <a href="https://www.instagram.com/wingit__ng" target="_blank" class="text-dark">
+                      <img src="images/instagram-icon.png" alt="Instagram" style="width: 30px; margin-right: 15px;">
+                  </a>
+                  <a href="https://www.snapchat.com/safiyaaa_t" target="_blank" class="text-dark">
+                      <img src="images/sc-icon.jpg" alt="Snapchat" style="width: 30px;">
+                  </a>
+              </div>
+          </div>
+      </div>
 
-        <div class="row mt-4">
-            <div class="col-12 text-center">
-                <p class="small text-white">&copy; 2025 Hot-Wings. All Wings Reserved.</p>
-            </div>
-        </div>
-    </div>
+      <div class="row mt-4">
+          <div class="col-12 text-center">
+              <p class="small text-dark" style="font-weight: bold;">&copy; 2025 Hot-Wings. All Wings Reserved.</p>
+          </div>
+      </div>
+  </div>
 </section>
 </body>
 </html>
